@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{% block 'conteudo'%}
+
+<div>
+    <h1 class="text-lg font-bold"><span class="mr-2 text-green-700">|</span>Contatos</h1>
+
+    <div class="mt-4 flex flex-col md:flex-row gap-4 md:gap-0 md:justify-around md:items-center">
+        <div class="flex flex-col gap-2 border border-solid border-green-700 py-5 px-10 rounded">
+            <div class="flex flex-col items-center ">
+                <img
+                  src="{% static 'img/rachel.jpg' %}"
+                  alt="Picture of the author"
+                  class="rounded-full h-52 w-52"
+                />
+                <h1 class="my-4 font-bold">Engª Rachel Andrade Pereira</h1>
+            </div>
+            <span><strong>E-mail:</strong> p.rachelandrade@gmail.com</span>
+            <span><strong>Telefone:</strong> (24) 99229-0771</span>
+            <span><strong>Formação:</strong> Engenharia Civil</span>
+            <span><strong>Instituição:</strong> univassouras</span>
+        </div>
+
+        <div class="flex flex-col gap-2 border border-solid border-green-700 py-5 px-10 rounded">
+            <div class="flex flex-col items-center ">
+                <img
+                  src="{% static 'img/kelvyn1.jpg' %}"
+                  alt="Picture of the author"
+                  class="rounded-full h-52 w-52"
+                />
+                <h1 class="my-4 font-bold">Engº Kelvyn Lopes Telles</h1>
+            </div>
+            <span><strong>E-mail:</strong> kelvyn.telles@gmail.com</span>
+            <span><strong>Telefone:</strong> (24) 99228-1699</span>
+            <span><strong>Formação:</strong> Engenharia de Software</span>
+            <span><strong>Instituição:</strong> univassouras</span>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

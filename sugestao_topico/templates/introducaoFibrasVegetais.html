@@ -1,0 +1,25 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{% block 'conteudo'%}
+
+  <div>
+      <h1 class="text-lg font-bold"><span class="mr-2 text-green-700">|</span>Introdução às Fibras Vegetais</h1>
+      <div class="mt-4">
+          <img class="md:float-left mt-5 w-full md:w-96 md:mr-5 rounded" src="{% static 'img/sustentabilidade.jpg' %}">
+          <br>
+          <h3>O que são fibras vegetais?</h3>
+          <p class="mb-4 text-base text-zinc-400">O teor de celulose presente nas fibras vegetais é o principal influenciador das propriedades mecânicas das mesmas, como por exemplo, resistência à tração e flexão, que conferem rigidez as fibras e variam em função da espécie da planta (Bledzki e Gassan, 1999; Ashby, 2011). Já fibras da mesma espécie podem apresentar composições químicas distintas, em função de onde são cultivas, por exemplo.</p>
+
+          <h3>De onde vem esses resíduos e pra onde vão?</h3>
+          <p class="mb-2 text-base text-zinc-400">
+              Os resíduos de fibras vegetais, são gerados desde a extração da planta, mas principalmente na produção do produto final, que no exemplo das fibras de sisal e juta, ao serem produzidas as cordas, tapetes e artesanatos, liberam pequenas fibras que serão varridas e descartas no lixo comum, e em grande escala, nos produtos acabados como cordas, que após serem utilizadas são descartadas sem possível reutilização.
+          </p>
+
+          <p class="mb-2 text-base text-zinc-400">
+              Já no caso das fibras de coco, essas são eliminadas junto com a casca do coco, o que leva um grande tempo de degradação na natureza, de aproximadamente 12 anos, e mesmo quando transportado para locais apropriados, devido ao seu longo tempo de decomposição, diminuem o tempo de vida útil dos aterros sanitários (SILVA, 2014).
+          </p>
+        </div>
+    </div>
+
+{%endblock%}

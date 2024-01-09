@@ -1,0 +1,25 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{% block 'conteudo'%}
+
+<div>
+    <h1 class="text-lg font-bold"><span class="mr-2 text-green-700">|</span>Criar Nova Sugestão de Tópico</h1>
+    <form action="{% url 'salvar_sugestao_topico' %}" method="POST" class="mt-6">
+        {% csrf_token %}
+        <label>Titulo:</label><br>
+        <input type="text" name="titulo" class="mb-5 h-10 bg-transparent border-b-2 border-b-solid border-b-green-700 outline-none w-full"><br>
+        <label>Resumo:</label><br>
+        <textarea type="text" name="resumo" class="mb-5 h-10 bg-transparent border-b-2 border-b-solid border-b-green-700 outline-none w-full"></textarea><br>
+        <label>Nome do autor:</label><br>
+        <input type="text" name="nome" class="mb-5 h-10 bg-transparent border-b-2 border-b-solid border-b-green-700 outline-none w-full"><br>
+        <label>Contato:</label><br>
+        <input type="number" name="contato" class="mb-5 h-10 bg-transparent border-b-2 border-b-solid border-b-green-700 outline-none w-full"><br>
+        {% if erro %}
+            <h4 style="margin:10px 0; color: #b81414; font-size: 18px;">{{ erro }}</h4>
+        {% endif %}
+        <button type="submit" class="w-full bg-green-700 hover:bg-green-600 transition text-white font-bold py-4 rounded text-2xl">Criar Sugestão</button>
+    </form>
+</div>
+
+{%endblock%}
