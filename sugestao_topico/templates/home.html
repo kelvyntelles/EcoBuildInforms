@@ -8,77 +8,49 @@
 {% block 'conteudo'%}
 
 <div>
-  <h1 class="text-lg font-bold"><span class="mr-2 text-green-700">|</span>Sustentabilidade na Construção Civil</h1>
-  <div class="mt-4">
-      <img class="md:float-left mt-5 w-full md:w-96 md:mr-5 rounded" src="{% static 'img/sustentabilidade.jpg' %}">
-      <br>
-      <p class="mb-2 text-base text-zinc-400">Devido as constantes alterações ambientais, eleva-se as preocupações com o gerenciamento das relações entre as atividades humanas e a natureza. Portanto, é sabido o grande desafio que as administrações públicas têm que enfrentar para desenvolver modelos de gestão que executem de forma transparente e democrática a preservação do meio ambiente (BONATO, et al., 2021).</p>
-      <p class="mb-2 text-base text-zinc-400">Tendo em vista que a indústria do cimento é responsável por aproximadamente 3% das emissões mundiais de gases de efeito estufa e por aproximadamente 5% das emissões de CO2 (WBCSD, 2002). Nas emissões específicas da indústria do cimento, aproximadamente 50% referem-se ao processo produtivo, cerca de 5% ao transporte, 5% ao uso da eletricidade e os outros 40% ao processo de clinquerização (WBCSD, 2002).</p>
-      <p class="mb-2 text-base text-zinc-400">Sabendo de tais impactos ambientais gerados pelo ramo da construção civil, e. pensando numa forma de minimiza-los, iniciou-se em 1970, na Inglaterra, o estudo de fibras com finalidade de reforço de matrizes estruturais, e no Brasil, em 1980, a pesquisa teve início através do Centro de Pesquisa e Desenvolvimento (Ceped), em Camaçari na Bahia.</p>
+    <h1 class="fs-4"><span class="me-2 text-success">|</span>Sustentabilidade na Construção Civil</h1>
+    <div>
+        <img src="{% static 'img/sustentabilidade.jpg' %}" class="img-fluid float-md-start me-3" style="width:350px">
+        <p class="text-start">Devido as constantes alterações ambientais, eleva-se as preocupações com o gerenciamento das relações entre as atividades humanas e a natureza. Portanto, é sabido o grande desafio que as administrações públicas têm que enfrentar para desenvolver modelos de gestão que executem de forma transparente e democrática a preservação do meio ambiente (BONATO, et al., 2021).</p>
+        <p class="text-start">Tendo em vista que a indústria do cimento é responsável por aproximadamente 3% das emissões mundiais de gases de efeito estufa e por aproximadamente 5% das emissões de CO2 (WBCSD, 2002). Nas emissões específicas da indústria do cimento, aproximadamente 50% referem-se ao processo produtivo, cerca de 5% ao transporte, 5% ao uso da eletricidade e os outros 40% ao processo de clinquerização (WBCSD, 2002).</p>
+        <p class="text-start">Sabendo de tais impactos ambientais gerados pelo ramo da construção civil, e. pensando numa forma de minimiza-los, iniciou-se em 1970, na Inglaterra, o estudo de fibras com finalidade de reforço de matrizes estruturais, e no Brasil, em 1980, a pesquisa teve início através do Centro de Pesquisa e Desenvolvimento (Ceped), em Camaçari na Bahia.</p>
     </div>
 </div>
 
-<div class="mt-10">
-  <h1 class="text-lg font-bold">Tópicos</h1>
-  <div class="flex flex-col md:flex-row md:justify-between md:items-center mt-3 gap-5">
-      <a href="/introducaoFibrasVegetais" class="w-full">
-            <div
-                class="
-                    flex flex-col gap-5 border border-solid border-green-700 p-5 rounded
-                    cursor-pointer hover:bg-zinc-900 text-transparent hover:text-white
-                    transition-all w-full
-                ">
-                <div class="flex flex-row gap-2 items-center">
-                    <span class="text-white font-bold">»</span>
-                    <span>Visualizar tópico</span>
-                </div>
-                <span class="text-white">Introdução às Fibras Vegetais</span>
-            </div>
-      </a>
-      <a href="/tiposFibras" class="w-full">
-            <div
-                class="
-                    flex flex-col gap-5 border border-solid border-green-700 p-5 rounded
-                    cursor-pointer hover:bg-zinc-900 text-transparent hover:text-white
-                    transition-all w-full
-                ">
-                <div class="flex flex-row gap-2 items-center">
-                    <span class="text-white font-bold">»</span>
-                    <span>Visualizar tópico</span>
-                </div>
-                <span class="text-white">Tipos de fibras</span>
-            </div>
-      </a>
-      <a href="/importanciaAmbiental" class="w-full">
-            <div
-                class="
-                    flex flex-col gap-5 border border-solid border-green-700 p-5 rounded
-                    cursor-pointer hover:bg-zinc-900 text-transparent hover:text-white
-                    transition-all w-full
-                ">
-                <div class="flex flex-row gap-2 items-center">
-                    <span class="text-white font-bold">»</span>
-                    <span>Visualizar tópico</span>
-                </div>
-                <span class="text-white">Importância Ambiental</span>
-            </div>
-      </a>
-      <a href="/aplicabilidadeConstrucaoCivil" class="w-full">
-            <div
-                class="
-                    flex flex-col gap-5 border border-solid border-green-700 p-5 rounded
-                    cursor-pointer hover:bg-zinc-900 text-transparent hover:text-white
-                    transition-all w-full
-                ">
-                <div class="flex flex-row gap-2 items-center">
-                    <span class="text-white font-bold">»</span>
-                    <span>Visualizar tópico</span>
-                </div>
-                <span class="text-white">Aplicabilidade na Construção Civil</span>
-            </div>
-      </a>
+<h1 class="fs-6"><span class="me-2 text-success">|</span>Tópicos</h1>
+<div class="row">
+  <div class="col-sm-3 mb-2">
+    <div class="card border-success">
+      <div class="card-body">
+        <h5 class="card-title mb-4" style="font-size:12px; font-weight:bold">Introdução às Fibras Vegetais</h5>
+        <a href="/introducaoFibrasVegetais" class="btn btn-success">Visualizar tópico</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 mb-2">
+    <div class="card border-success">
+      <div class="card-body">
+        <h5 class="card-title mb-4" style="font-size:12px; font-weight:bold">Tipos de fibras</h5>
+        <a href="/tiposFibras" class="btn btn-success">Visualizar tópico</a>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-3 mb-2">
+    <div class="card border-success">
+      <div class="card-body">
+        <h5 class="card-title mb-4" style="font-size:12px; font-weight:bold">Importância Ambiental</h5>
+        <a href="/importanciaAmbiental" class="btn btn-success">Visualizar tópico</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 mb-2">
+    <div class="card border-success">
+      <div class="card-body">
+        <h5 class="card-title mb-4" style="font-size:12px; font-weight:bold">Aplicabilidade na Construção Civil</h5>
+        <a href="/aplicabilidadeConstrucaoCivil" class="btn btn-success">Visualizar tópico</a>
+      </div>
+    </div>
   </div>
 </div>
 
 {%endblock%}
-

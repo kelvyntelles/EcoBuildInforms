@@ -8,47 +8,48 @@
 {% block 'conteudo'%}
 
 <div>
-    <h1 class="text-lg font-bold"><span class="mr-2 text-green-700">|</span>Importância Ambiental</h1>
-    <div class="mt-4">
-        <img class="md:float-left mt-5 w-full md:w-96 md:mr-5 rounded" src="{% static 'img/sustentabilidade.jpg' %}">
-        <br>
-        <p class="mb-2 text-base text-zinc-400">Com o poder das conferências e políticas públicas na prática de preservação e conservação do meio ambiente, em 2015 aconteceu a Assembleia Geral das Nações Unidas (AGNU), composta por 193 Estados-membros da ONU (Organização das Nações Unidas) que definiram metas a serem cumpridas a nível mundial, nas esferas sociais, econômicas, ambientais e institucionais, chamadas de Objetivos de Desenvolvimento Sustentável (ODS), compostos de 17 objetivos e 169 metas globais a serem atingidos até o ano de 2030, integrando assim a Agenda 2030. </p>
-        <p class="mb-2 text-base text-zinc-400">Sendo dos 17 ODS, a utilização de resíduos de fibras vegetais atende a 4 deles, que são os objetivos 8, 9, 11 e 12.</p>
+    <h1 class="fs-4"><span class="me-2 text-success">|</span>Importância Ambiental</h1>
+    <div>
+        <img src="{% static 'img/sustentabilidade.jpg' %}" class="img-fluid float-md-start me-3" style="width:350px">
+        <p class="text-start">Com o poder das conferências e políticas públicas na prática de preservação e conservação do meio ambiente, em 2015 aconteceu a Assembleia Geral das Nações Unidas (AGNU), composta por 193 Estados-membros da ONU (Organização das Nações Unidas) que definiram metas a serem cumpridas a nível mundial, nas esferas sociais, econômicas, ambientais e institucionais, chamadas de Objetivos de Desenvolvimento Sustentável (ODS), compostos de 17 objetivos e 169 metas globais a serem atingidos até o ano de 2030, integrando assim a Agenda 2030. </p>
+        <p class="text-start">Sendo dos 17 ODS, a utilização de resíduos de fibras vegetais atende a 4 deles, que são os objetivos 8, 9, 11 e 12.</p>
     </div>
-    <div class="mt-12 flex flex-col md:grid md:grid-cols-2 gap-4">
-        <div class="p-5 bg-pink-950 rounded">
-            <h1 class="font-bold">ODS 8 – TRABALHO DECENTE E CRESCIMENTO ECONÔMICO</h1>
-            <hr>
-            <br>
-            <div>
-                <p class="text-base text-slate-100">Com o objetivo promover o crescimento econômico inclusivo e sustentável, emprego pleno, produtivo e decente para todos. Atingindo níveis mais elevados de produtividade econômica, com políticas orientadas para o desenvolvimento de atividades como; empreendedorismo, criatividade e inovação. E incentivando o crescimento de pequenas e médias empresas por meio do acesso a serviços financeiros.</p>
-            </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card text-bg-success mb-3">
+          <div class="card-header">ODS 8 – TRABALHO DECENTE E CRESCIMENTO ECONÔMICO</div>
+          <div class="card-body">
+            <p class="card-text" style="font-size:12px; min-height: 130px">Com o objetivo promover o crescimento econômico inclusivo e sustentável, emprego pleno, produtivo e decente para todos. Atingindo níveis mais elevados de produtividade econômica, com políticas orientadas para o desenvolvimento de atividades como; empreendedorismo, criatividade e inovação. E incentivando o crescimento de pequenas e médias empresas por meio do acesso a serviços financeiros.</p>
+          </div>
         </div>
-        <div class="p-5 bg-orange-900 rounded">
-            <h1 class="font-bold">ODS 9 – INDÚSTRIA, INOVAÇÃO E INFRAESTRUTURA</h1>
-            <hr>
-            <br>
-            <div>
-                <p class="text-base text-slate-100">Têm o objetivo de construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação, fortalecendo as pesquisas científicas, melhorando as capacidades tecnológicas de setores industriais em todos os países, principalmente os em desenvolvimento, aumentando assim, até 2030 o número de trabalhadores de pesquisa e desenvolvimento.</p>
-            </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card text-bg-danger mb-3">
+          <div class="card-header">ODS 9 – INDÚSTRIA, INOVAÇÃO E INFRAESTRUTURA</div>
+          <div class="card-body">
+            <p class="card-text" style="font-size:12px; min-height: 130px">Têm o objetivo de construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação, fortalecendo as pesquisas científicas, melhorando as capacidades tecnológicas de setores industriais em todos os países, principalmente os em desenvolvimento, aumentando assim, até 2030 o número de trabalhadores de pesquisa e desenvolvimento.</p>
+          </div>
         </div>
-        <div class="p-5 bg-yellow-700 rounded">
-            <h1 class="font-bold">ODS 11 – CIDADES E COMUNIDADES SUSTENTÁVEIS</h1>
-            <hr>
-            <br>
-            <div>
-                <p class="text-base text-slate-100">Têm como objetivo até 2030 tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis. Principalmente dando apoio aos países menos desenvolvidos, por meio de assistência técnica e financeira, para construções sustentáveis e resilientes, utilizando materiais locais, com isso reduzindo também o impacto ambiental gerado por elas.</p>
-            </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card text-bg-warning mb-3">
+          <div class="card-header">ODS 11 – CIDADES E COMUNIDADES SUSTENTÁVEIS</div>
+          <div class="card-body">
+            <p class="card-text" style="font-size:12px; min-height: 130px">Têm como objetivo até 2030 tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis. Principalmente dando apoio aos países menos desenvolvidos, por meio de assistência técnica e financeira, para construções sustentáveis e resilientes, utilizando materiais locais, com isso reduzindo também o impacto ambiental gerado por elas.</p>
+          </div>
         </div>
-        <div class="p-5 bg-yellow-900 rounded">
-            <h1 class="font-bold">ODS 12 – CONSUMO E PRODUÇÃO RESPONSÁVEIS</h1>
-            <hr>
-            <br>
-            <div>
-                <p class="text-base text-slate-100">Objetiva-se em reduzir substancialmente até 2030 a geração de resíduos por meio da prevenção, redução, reciclagem e reuso. Incentivando principalmente grandes empresas e transnacionais a adotar práticas sustentáveis. Também apoiando países em desenvolvimento a fortalecer suas capacidades científicas e tecnológicas para mudar para padrões mais sustentáveis de produção e consumo, com isso, garantindo que as pessoas, em todos os lugares, tenham informação relevante e conscientização para o desenvolvimento sustentável e estilos de vida em harmonia com a natureza.</p>
-            </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card text-bg-info mb-3">
+          <div class="card-header">ODS 12 – CONSUMO E PRODUÇÃO RESPONSÁVEIS</div>
+          <div class="card-body">
+            <p class="card-text" style="font-size:12px; min-height: 130px">Objetiva-se em reduzir substancialmente até 2030 a geração de resíduos por meio da prevenção, redução, reciclagem e reuso. Incentivando principalmente grandes empresas e transnacionais a adotar práticas sustentáveis. Também apoiando países em desenvolvimento a fortalecer suas capacidades científicas e tecnológicas para mudar para padrões mais sustentáveis de produção e consumo, com isso, garantindo que as pessoas, em todos os lugares, tenham informação relevante e conscientização para o desenvolvimento sustentável e estilos de vida em harmonia com a natureza.</p>
+          </div>
         </div>
     </div>
 </div>
+
 
 {%endblock%}
